@@ -78,3 +78,4 @@ def odstranit_ukol():
         print(f'Úkol "{odstraneny_ukol["nazev"]}" byl odstraněn.')
 
 hlavni_menu()
+
