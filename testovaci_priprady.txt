@@ -1,0 +1,358 @@
+
+TESTOVACÍ PŘÍPADY – TASK MANAGER
+
+1. Funkce: hlavni_menu()
+
+TC01 – Zobrazení hlavního menu
+TC02 – Výběr platné možnosti z menu
+TC03 – Neplatná volba v menu
+TC04 – Ukončení programu
+
+2. Funkce: pridat_ukol()
+
+TC05 – Přidání úkolu s platnými údaji
+TC06 – Prázdný název úkolu a popisu
+
+3. Funkce: zobrazit_ukoly()
+
+TC07 – Zobrazení prázdného seznamu
+TC08 – Zobrazení existujících úkolů
+
+4. Funkce: odstranit_ukol()
+
+TC9 – Odstranění existujícího úkolu
+TC10 – Neexistující číslo úkolu
+TC11 – Odstranění úkolu z prázdného seznamu
+
+
+------------------------------------------------------------------------------
+1. Funkce: hlavni_menu()
+TC01: Zobrazení hlavního menu
+------------------------------------------------------------------------------
+
+Popis:
+Ověření, že se po spuštění programu zobrazí hlavní menu s nabídkou možností.
+
+Vstupní podmínky:
+Program je spuštěn.
+
+Kroky testu:
+1. Spusťte program main.py.
+
+Očekávaný výsledek:
+Zobrazí se hlavní menu s možnostmi:
+1. Přidat nový úkol
+2. Zobrazit všechny úkoly
+3. Odstranit úkol
+4. Konec programu
+Vyberte možnost (1-4):
+
+Skutečný výsledek:
+Program main.py byl spuštěn, zobrazil hlavní menu a výzvu k volbě možnosti.
+
+Poznámky:
+Základní test ověřující spuštění aplikace.
+
+==========
+Stav: PASS
+==========
+
+------------------------------------------------------------------------------
+1. Funkce: hlavni_menu()
+TC02: Výběr platné možnosti z menu
+------------------------------------------------------------------------------
+
+Popis:
+Ověření, že volba čísla 1 v hlavním menu správně spustí funkci pridat_ukol.
+
+Vstupní podmínky:
+Program zobrazuje hlavní menu.
+
+Kroky testu:
+1. Spusťte program.
+2. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb.
+3. Zadejte číslo 1 a potvrďte stisknutím klávesy Enter.
+
+Očekávaný výsledek:
+Program spustí funkci pridat_ukol() a zobrazí výzvu k zadání názvu 
+a popisu úkolu.
+
+Skutečný výsledek:
+Funkce pridat_ukol() byla spuštěna a program zobrazil výzvu k zadání názvu 
+a popisu úkolu.
+
+Poznámky:
+Tento případ ověřuje základní navigaci z hlavního menu a funkčnost jedné 
+z klíčových funkcí programu.
+
+==========
+Stav: PASS
+==========
+
+------------------------------------------------------------------------------
+1. Funkce: hlavni_menu()
+TC03: Neplatná volba v menu
+------------------------------------------------------------------------------
+
+Popis:
+Ověření reakce programu na neplatnou volbu v hlavním menu.
+
+Vstupní podmínky:
+Program zobrazuje hlavní menu.
+
+Kroky testu:
+1. Zadejte neplatnou hodnotu (např. 5 nebo a).
+
+Očekávaný výsledek:
+Program zobrazí upozornění "Neplatná volba, zkuste to znovu"
+a znovu zobrazí hlavní menu.
+
+Skutečný výsledek:
+Program zobrazil upozornění "Neplatná volba, zkuste to znovu"
+a znovu zobrazil hlavní menu.
+
+Poznámky:
+Negativní test – ošetření neplatného vstupu.
+
+==========
+Stav: PASS
+==========
+
+------------------------------------------------------------------------------
+1. Funkce: hlavni_menu()
+TC04: Ukončení programu
+------------------------------------------------------------------------------
+
+Popis:
+Ověření správného ukončení programu.
+
+Vstupní podmínky:
+Program zobrazuje hlavní menu.
+
+Kroky testu:
+1. Zadejte číslo 4.
+
+Očekávaný výsledek:
+Program vypíše text „Konec programu.“ a ukončí se.
+
+Skutečný výsledek:
+Program vypsal text „Konec programu.“ a ukončil se.
+
+Poznámky:
+Kritická funkčnost aplikace.
+
+==========
+Stav: PASS
+==========
+
+------------------------------------------------------------------------------
+2. Funkce: pridat_ukol()
+TC05: Přidání úkolu s platnými údaji
+------------------------------------------------------------------------------
+
+Popis:
+Ověření přidání nového úkolu při zadání platného názvu a popisu.
+
+Vstupní podmínky:
+Program vyzývá k zadání názvu úkolu.
+
+Kroky testu:
+1. Zvolte možnost 1 v hlavním menu.
+2. Zadejte název úkolu např. "uklid" a stiskněte Enter.
+3. Zadejte popis úkolu např. "nadobi, pracka" a stiskněte Enter.
+
+Očekávaný výsledek:
+Úkol bude uložen do seznamu a program zobrazí potvrzovací hlášku 
+o přidání úkolu "Úkol "uklid" byl přidán."
+
+Skutečný výsledek:
+Úkol byl uložen do seznamu a program zobrazil potvrzovací hlášku 
+o přidání úkolu "Úkol "uklid" byl přidán."
+
+Poznámky:
+Pozitivní scénář.
+
+==========
+Stav: PASS
+==========
+
+------------------------------------------------------------------------------
+2. Funkce: pridat_ukol()
+TC06: Prázdný název úkolu a popisu
+------------------------------------------------------------------------------
+
+Popis:
+Ověření chování programu při zadání prázdného názvu úkolu a popisu.
+
+Vstupní podmínky:
+Program vyzývá k zadání názvu úkolu.
+
+Kroky testu:
+1. Zvolte možnost 1 v hlavním menu.
+2. Nechte pole pro název prázdné a potvrďte Enterem.
+3. Nechte pole pro popis prázdné a potvrďte Enterem.
+
+Očekávaný výsledek:
+Program upozorní uživatele, že název a popis nesmí být prázdný, 
+a vyzve k opětovnému zadání.
+
+Skutečný výsledek:
+Program po zadání prádného úkolu a popisu upozorní uživatele hláškou 
+"Název ani popis nesmí být prázdný. Zkuste to znovu." a vyzve k novému zadaní.
+
+Poznámky:
+Negativní test – ošetření neplatného vstupu.
+
+==========
+Stav: PASS
+==========
+
+
+------------------------------------------------------------------------------
+3. Funkce: zobrazit_ukoly()
+TC07: Zobrazení prázdného seznamu
+------------------------------------------------------------------------------
+
+Popis:
+Ověření chování aplikace při zobrazení prázdného seznamu úkolů.
+
+Vstupní podmínky:
+Seznam úkolů je prázdný.
+
+Kroky testu:
+1. Zvolte možnost 2 v hlavním menu.
+
+Očekávaný výsledek:
+Program informuje, že seznam úkolů je prázdný.
+
+Skutečný výsledek:
+Program informoval uživatele hláškou "Seznam úkolů je prázdný." 
+a znovu vypsal hlavni menu.
+
+Poznámky:
+Hraniční scénář.
+
+==========
+Stav: PASS
+==========
+
+
+------------------------------------------------------------------------------
+3. Funkce: zobrazit_ukoly()
+TC08: Zobrazení existujících úkolů
+------------------------------------------------------------------------------
+
+Popis:
+Ověření správného výpisu uložených úkolů.
+
+Vstupní podmínky:
+V seznamu je alespoň jeden úkol.
+
+Kroky testu:
+1. Zvolte možnost 2 v hlavním menu.
+
+Očekávaný výsledek:
+Program zobrazí seznam úkolů s jejich číslem, názvem a popisem.
+
+Skutečný výsledek:
+Program zobrazil seznam úkolů s jejich číslem, názvem a popisem.
+
+Poznámky:
+Pozitivní test.
+
+==========
+Stav: PASS
+==========
+
+------------------------------------------------------------------------------
+4. Funkce: odstranit_ukol()
+TC09: Odstranění existujícího úkolu
+------------------------------------------------------------------------------
+
+Popis:
+Ověření odstranění úkolu při zadání platného čísla.
+
+Vstupní podmínky:
+V seznamu je alespoň jeden úkol.
+
+Kroky testu:
+1. Zvolte možnost 3 v hlavním menu.
+2. Zadejte číslo existujícího úkolu.
+
+Očekávaný výsledek:
+Úkol je odstraněn a program zobrazí potvrzovací hlášku.
+
+Skutečný výsledek:
+Úkol je odstraněn a program zobrazil potvrzovací hlášku 
+"Úkol "úkol" byl odstraněn.".
+
+Poznámky:
+Pozitivní test.
+
+==========
+Stav: PASS
+==========
+
+------------------------------------------------------------------------------
+4. Funkce: odstranit_ukol()
+TC10: Odstranění neexistujícího úkolu
+------------------------------------------------------------------------------
+
+Popis:
+Ověření reakce programu na odstranění neexistujícího čísla úkolu.
+
+Vstupní podmínky:
+V seznamu je alespoň jeden úkol.
+
+Kroky testu:
+1. Zvolte možnost 3 v hlavním menu.
+2. Zadejte číslo mimo rozsah seznamu.
+
+Očekávaný výsledek:
+Program upozorní, že vybraný úkol neexistuje.
+
+Skutečný výsledek:
+Program zobrazil hlášku "Takový úkol neexistuje.".
+
+Poznámky:
+Negativní test.
+
+==========
+Stav: PASS
+==========
+
+------------------------------------------------------------------------------
+4. Funkce: odstranit_ukol()
+TC11: Odstranění úkolu z prázdného seznamu
+------------------------------------------------------------------------------
+
+Popis:
+Ověření chování programu při pokusu odstranit úkol z prázdného seznamu.
+
+Vstupní podmínky:
+V seznamu není žádný úkol.
+
+Kroky testu:
+1. V menu vyberte volbu 3.
+
+Očekávaný výsledek:
+Program oznámí, že v seznamu žádný úkol není.
+
+Skutečný výsledek:
+Program zobrazil hlášku "Nejsou žádné úkoly k odstranění."
+
+Poznámky:
+Negativní scénář.
+
+==========
+Stav: PASS
+==========
+
+
+
+
+
+
+
+
+

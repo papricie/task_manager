@@ -44,7 +44,6 @@ Správce úkolů - Hlavní menu
 4. Konec programu
 Vyberte možnost (1-4):
 
-﻿
 
 
 
@@ -75,7 +74,7 @@ Tato funkce má uživateli umožnit zadat číslo úkolu, který chce odstranit,
 
 Výstup v konzoli:
 
-﻿Správce úkolů - Hlavní menu
+Správce úkolů - Hlavní menu
 1. Přidat nový úkol
 2. Zobrazit všechny úkoly
 3. Odstranit úkol
@@ -97,13 +96,12 @@ Vyberte možnost (1-4):
 
 
 
-﻿
 
 Konec programu
 
 Pokud uživatel zadá volbu 4 v hlavním menu program se ukončí.
 
-﻿
+
 
 Výstup v konzoli:
 
@@ -116,30 +114,37 @@ Vyberte možnost (1-4):
 
 Konec programu.
 
-﻿
-﻿
+
+
 
 Zadání č. 2
-Vaším úkolem je vytvořit testovací případy (TC) pro každou funkci v projektu Task manager. Tyto případy by měly pokrýt všechny možné cesty a okrajové případy pro každou z funkcí. Testovací případy budou sloužit jako návrh pro automatické testy nebo manuální ověření správnosti programu. Testovací případy budou napsány buď formou tabulky (třeba v Excelu) nebo v textovém souboru (například Word) a budou odevzdány se zadáním č. 1. 
+Vaším úkolem je vytvořit testovací případy (TC) pro každou funkci v projektu Task manager. 
+Tyto případy by měly pokrýt všechny možné cesty a okrajové případy pro každou z funkcí. 
+Testovací případy budou sloužit jako návrh pro automatické testy 
+nebo manuální ověření správnosti programu. 
+Testovací případy budou napsány buď formou tabulky (třeba v Excelu) 
+nebo v textovém souboru (například Word) a budou odevzdány se zadáním č. 1. 
 
-﻿
+
 
 Co je potřeba vytvořit:
 
-﻿
+
 
 Seznam testovacích případů:
 
-Pro každou funkci (hlavni_menu, pridat_ukol, zobrazit_ukoly, odstranit_ukol) vytvořte samostatnou sadu testovacích případů.
-Popište konkrétní kroky testování, očekávané výsledky a situace, které by mohly nastat (např. chybové stavy).
-﻿
+Pro každou funkci (hlavni_menu, pridat_ukol, zobrazit_ukoly, odstranit_ukol) 
+vytvořte samostatnou sadu testovacích případů.
+Popište konkrétní kroky testování, očekávané výsledky a situace, 
+které by mohly nastat (např. chybové stavy).
+
 
 Pokrytí různých typů testů:
 
 Pozitivní testy: Situace, kdy je funkce použita správně (např. přidání úkolu s platnými vstupy).
 Negativní testy: Situace, kdy uživatel zadá neplatné nebo neúplné údaje (např. prázdný název úkolu).
 Hraniční případy: Například přidání prvního úkolu, zobrazení prázdného seznamu, odstranění posledního úkolu.
-﻿
+
 
 Popis testovacích případů:
 
@@ -152,7 +157,6 @@ Očekávaný výsledek (co má program udělat nebo zobrazit).
 Skutečný výsledek  (co program udělal)
 Stav ( Pass / Fail )
 Poznámky (např. proč je tento případ důležitý).
-﻿
 
 Příklady testovacího případu:
 
