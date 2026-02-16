@@ -1,4 +1,4 @@
-# Projekt_04 Engeto Academy: Task manager
+# Task manager
 
 Tento projekt slouží k **procvičení manuálního testování Task manageru**, 
 který jsem sama naprogramovala a otestovala, podle mnou napsaných testovacích případů
